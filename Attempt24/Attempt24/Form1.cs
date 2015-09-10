@@ -20,6 +20,7 @@ namespace Attempt24
         private void button1_Click(object sender, EventArgs e)
         {
             textBox1.Text = "It finally worked!!!";
+            textBox2.Text = "Just making some changes.";
         }
     }
 }
