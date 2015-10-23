@@ -21,5 +21,11 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void ButCheckOut_Click(object sender, EventArgs e)
+        {
+            WindowsFormsApplication2.Form2 nextForm = new WindowsFormsApplication2.Form2();
+            nextForm.Show();
+        }
     }
 }

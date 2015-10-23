@@ -126,6 +126,7 @@
             this.ButCheckOut.TabIndex = 8;
             this.ButCheckOut.Text = "proceed to checkout";
             this.ButCheckOut.UseVisualStyleBackColor = true;
+            this.ButCheckOut.Click += new System.EventHandler(this.ButCheckOut_Click);
             // 
             // BoxAmen
             // 
