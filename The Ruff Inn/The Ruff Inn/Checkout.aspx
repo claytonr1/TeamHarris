@@ -11,6 +11,7 @@
     <div>
     
         Card Type:
+        <br />
         <asp:DropDownList ID="ddlCardType" runat="server">
             <asp:ListItem>Choose Type</asp:ListItem>
             <asp:ListItem>American Express</asp:ListItem>
@@ -20,10 +21,12 @@
         </asp:DropDownList>
         <br />
         Card Number:
+        <br />
         <asp:TextBox ID="txtCardNumber" runat="server"></asp:TextBox>
         <br />
-        Expiration Month:
-        <asp:DropDownList ID="ddlExpirationMonth" runat="server">
+        Expiration:<br />
+&nbsp;Month:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Year:<br />
+&nbsp;<asp:DropDownList ID="ddlExpirationMonth" runat="server">
             <asp:ListItem>1</asp:ListItem>
             <asp:ListItem>2</asp:ListItem>
             <asp:ListItem>3</asp:ListItem>
@@ -37,7 +40,7 @@
             <asp:ListItem>11</asp:ListItem>
             <asp:ListItem>12</asp:ListItem>
         </asp:DropDownList>
-&nbsp;&nbsp;&nbsp; Expiration Year:
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:DropDownList ID="ddlExpirationYear" runat="server">
             <asp:ListItem Value="2015"></asp:ListItem>
             <asp:ListItem Value="2016"></asp:ListItem>
@@ -52,8 +55,11 @@
             <asp:ListItem>2025</asp:ListItem>
         </asp:DropDownList>
         <br />
+        <br />
         List of Charges:<br />
-        <asp:ListBox ID="lbxCharges" runat="server"></asp:ListBox>
+        <br />
+        <asp:ListBox ID="lbxCharges" runat="server" OnSelectedIndexChanged="lbxCharges_SelectedIndexChanged"></asp:ListBox>
+        <br />
         <br />
         <asp:CheckBox ID="cbxReceipt" runat="server" Text="Receipt?" />
         <br />

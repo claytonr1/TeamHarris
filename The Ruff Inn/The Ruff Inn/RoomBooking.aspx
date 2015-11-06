@@ -11,13 +11,16 @@
     <div>
     
         Rooms:
+        <br />
         <asp:DropDownList ID="ddlRoomType" runat="server" AutoPostBack="True">
             <asp:ListItem>Choose Room</asp:ListItem>
         </asp:DropDownList>
         <br />
-        Check In:<asp:Calendar ID="calCheckIn" runat="server"></asp:Calendar>
+        <br />
+        Check In:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Calendar ID="calCheckIn" runat="server"></asp:Calendar>
         <br />
         Check Out:<asp:Calendar ID="calCheckOut" runat="server"></asp:Calendar>
+        <br />
         <br />
         Number of Guests:
         <asp:DropDownList ID="ddlNumberGuests" runat="server">

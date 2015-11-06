@@ -13,22 +13,19 @@
         First Name:
         <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
         <br />
-        Last Name:
+        Last Name:&nbsp;
         <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
         <br />
-        Email:
-        <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+        Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
         <br />
-        Street:
-        <asp:TextBox ID="txtStreet" runat="server"></asp:TextBox>
+        Street:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtStreet" runat="server"></asp:TextBox>
         <br />
-        Apartment Number:
-        <asp:TextBox ID="txtApartmentNumber" runat="server"></asp:TextBox>
+        Apartment:&nbsp;
+        <asp:TextBox ID="txtApartmentNumber" runat="server" Width="42px"></asp:TextBox>
         <br />
-        City:
-        <asp:TextBox ID="txtCity" runat="server"></asp:TextBox>
+        City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtCity" runat="server"></asp:TextBox>
         <br />
-        State:
+        State:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:DropDownList ID="ddlState" runat="server">
             <asp:ListItem>Choose State</asp:ListItem>
             <asp:ListItem>Alabama</asp:ListItem>
@@ -38,13 +35,14 @@
         </asp:DropDownList>
     
         <br />
-        Zip:
-        <asp:TextBox ID="txtZip" runat="server"></asp:TextBox>
+        Zip:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="txtZip" runat="server" Width="78px"></asp:TextBox>
         <br />
-        Phone:
-        <asp:TextBox ID="txtPhone" runat="server"></asp:TextBox>
+        Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="txtPhone" runat="server" Width="171px"></asp:TextBox>
         <br />
-        Last Visited:<br />
+        <br />
+        Last Stay:<br />
         <asp:Calendar ID="calLastVisited" runat="server"></asp:Calendar>
         <br />
         <br />
