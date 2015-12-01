@@ -40,6 +40,15 @@ namespace The_Ruff_Inn {
         protected global::System.Web.UI.WebControls.Calendar calCheckIn;
         
         /// <summary>
+        /// lblCheckInValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCheckInValidator;
+        
+        /// <summary>
         /// calCheckOut control.
         /// </summary>
         /// <remarks>
@@ -47,6 +56,24 @@ namespace The_Ruff_Inn {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Calendar calCheckOut;
+        
+        /// <summary>
+        /// lblCheckOutValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCheckOutValidator;
+        
+        /// <summary>
+        /// cbxWeekendNights control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbxWeekendNights;
         
         /// <summary>
         /// ddlNumberGuests control.
@@ -58,13 +85,13 @@ namespace The_Ruff_Inn {
         protected global::System.Web.UI.WebControls.DropDownList ddlNumberGuests;
         
         /// <summary>
-        /// cbxDiscounts control.
+        /// rdoDiscounts control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList cbxDiscounts;
+        protected global::System.Web.UI.WebControls.RadioButtonList rdoDiscounts;
         
         /// <summary>
         /// lbxAmmenities control.
@@ -83,15 +110,6 @@ namespace The_Ruff_Inn {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListBox lbxCharges;
-        
-        /// <summary>
-        /// cbxWeekend control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox cbxWeekend;
         
         /// <summary>
         /// btnSubmit control.

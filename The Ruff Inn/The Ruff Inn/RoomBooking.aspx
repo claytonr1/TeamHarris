@@ -9,6 +9,9 @@
         .auto-style1 {
             text-decoration: underline;
         }
+        .auto-style2 {
+            font-size: large;
+        }
     </style>
 </head>
 <body>
@@ -21,14 +24,40 @@
         <strong>Rooms:
         </strong>
         <br />
-        <asp:DropDownList ID="ddlRoomType" runat="server" AutoPostBack="True">
+        <asp:DropDownList ID="ddlRoomType" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlRoomType_SelectedIndexChanged">
             <asp:ListItem>Choose Room</asp:ListItem>
         </asp:DropDownList>
         <br />
         <br />
-        <strong>Check In:&nbsp;&nbsp;&nbsp;&nbsp;</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Calendar ID="calCheckIn" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px"></asp:Calendar>
+        <table>
+            <tr>
+                <td>
+                    <strong>Check In:&nbsp;&nbsp;&nbsp;&nbsp;</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Calendar ID="calCheckIn" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" OnSelectionChanged="calCheckIn_SelectionChanged"></asp:Calendar>
+                </td>
+                <td>
+
+                    <asp:Label ID="lblCheckInValidator" runat="server"></asp:Label>
+
+                </td>
+            </tr>
+        </table>
         <br />
-        <strong>Check Out:</strong><asp:Calendar ID="calCheckOut" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px"></asp:Calendar>
+        <table>
+            <tr>
+                <td>
+                    <strong>Check Out:</strong><asp:Calendar ID="calCheckOut" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" OnSelectionChanged="calCheckOut_SelectionChanged"></asp:Calendar>
+                </td>
+                <td>
+
+                    <asp:Label ID="lblCheckOutValidator" runat="server"></asp:Label>
+
+                </td>
+            </tr>
+        </table>
+        <br />
+        <span class="auto-style2">(</span>
+        <asp:CheckBox ID="cbxWeekendNights" runat="server" Text="Weekend Nights?" />
+        &nbsp;<span class="auto-style2">)</span>
         <br />
         <br />
         Number of Guests:
@@ -40,11 +69,12 @@
         </asp:DropDownList>
         <br />
         <br />
-        Discounts:<asp:CheckBoxList ID="cbxDiscounts" runat="server" AutoPostBack="True" BorderColor="Black" BorderStyle="Solid">
+        Discounts:<asp:RadioButtonList ID="rdoDiscounts" runat="server" AutoPostBack="True" OnSelectedIndexChanged="rdoDiscounts_SelectedIndexChanged">
+            <asp:ListItem>None</asp:ListItem>
             <asp:ListItem>AAA</asp:ListItem>
             <asp:ListItem>AARP</asp:ListItem>
             <asp:ListItem>Ruff Rewards</asp:ListItem>
-        </asp:CheckBoxList>
+        </asp:RadioButtonList>
         <br />
         <strong>Ammenities:</strong><br />
         <asp:ListBox ID="lbxAmmenities" runat="server"></asp:ListBox>
@@ -52,8 +82,6 @@
         <br />
         <strong>Charges:</strong><br />
         <asp:ListBox ID="lbxCharges" runat="server"></asp:ListBox>
-        <br />
-&nbsp;<asp:CheckBox ID="cbxWeekend" runat="server" Enabled="False" Text="Weekend Nights?" />
         <br />
         <br />
         <asp:Button ID="btnSubmit" runat="server" Text="Submit &amp; Proceed to Checkout" OnClick="btnSubmit_Click" />
