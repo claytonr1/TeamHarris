@@ -5,14 +5,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
     
-        Card Type:
+        <span class="auto-style1"><strong>Checkout:</strong></span><br />
         <br />
-        <asp:DropDownList ID="ddlCardType" runat="server">
+        <strong>Card Type:</strong>
+        <br />
+        <asp:DropDownList ID="ddlCardType" runat="server" BackColor="White">
             <asp:ListItem>Choose Type</asp:ListItem>
             <asp:ListItem>American Express</asp:ListItem>
             <asp:ListItem>Discover</asp:ListItem>
@@ -20,11 +27,15 @@
             <asp:ListItem>Visa</asp:ListItem>
         </asp:DropDownList>
         <br />
-        Card Number:
         <br />
-        <asp:TextBox ID="txtCardNumber" runat="server"></asp:TextBox>
+        <strong>Card Number:
+        </strong>
         <br />
-        Expiration:<br />
+        <asp:TextBox ID="txtCardNumber" runat="server" BorderStyle="Solid"></asp:TextBox>
+        <br />
+        <strong>
+        <br />
+        Expiration:</strong><br />
 &nbsp;Month:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Year:<br />
 &nbsp;<asp:DropDownList ID="ddlExpirationMonth" runat="server">
             <asp:ListItem>1</asp:ListItem>
@@ -56,7 +67,7 @@
         </asp:DropDownList>
         <br />
         <br />
-        List of Charges:<br />
+        <strong>List of Charges:</strong><br />
         <br />
         <asp:ListBox ID="lbxCharges" runat="server" OnSelectedIndexChanged="lbxCharges_SelectedIndexChanged"></asp:ListBox>
         <br />
@@ -64,7 +75,7 @@
         <asp:CheckBox ID="cbxReceipt" runat="server" Text="Receipt?" />
         <br />
         <br />
-        <asp:Button ID="btnSubmit" runat="server" Text="Submit" />
+        <asp:Button ID="btnSubmit" runat="server" Text="Submit" BorderStyle="Solid" />
     
     </div>
     </form>

@@ -18,5 +18,20 @@ namespace The_Ruff_Inn
         {
             Response.Redirect("Checkout.aspx");
         }
+
+        protected void txtFirstName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void txtZip_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void txtPhone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
