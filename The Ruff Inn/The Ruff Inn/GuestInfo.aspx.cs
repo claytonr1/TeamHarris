@@ -33,5 +33,10 @@ namespace The_Ruff_Inn
         {
 
         }
+
+        protected void txtCity_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
