@@ -69,7 +69,7 @@
         <br />
         <strong>List of Charges:</strong><br />
         <br />
-        <asp:ListBox ID="lbxCharges" runat="server" OnSelectedIndexChanged="lbxCharges_SelectedIndexChanged"></asp:ListBox>
+        <asp:ListBox ID="lbxCharges" runat="server"></asp:ListBox>
         <br />
         <br />
         <asp:CheckBox ID="cbxReceipt" runat="server" Text="Receipt?" />
