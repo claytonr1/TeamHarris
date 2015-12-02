@@ -31,6 +31,15 @@ namespace The_Ruff_Inn {
         protected global::System.Web.UI.WebControls.DropDownList ddlRoomType;
         
         /// <summary>
+        /// lbxAmmenities control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox lbxAmmenities;
+        
+        /// <summary>
         /// calCheckIn control.
         /// </summary>
         /// <remarks>
@@ -94,22 +103,85 @@ namespace The_Ruff_Inn {
         protected global::System.Web.UI.WebControls.RadioButtonList rdoDiscounts;
         
         /// <summary>
-        /// lbxAmmenities control.
+        /// lblRoomName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox lbxAmmenities;
+        protected global::System.Web.UI.WebControls.Label lblRoomName;
         
         /// <summary>
-        /// lbxCharges control.
+        /// lblNumberNights control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox lbxCharges;
+        protected global::System.Web.UI.WebControls.Label lblNumberNights;
+        
+        /// <summary>
+        /// lblRoomAmount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblRoomAmount;
+        
+        /// <summary>
+        /// lblNumberWeekendNights control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNumberWeekendNights;
+        
+        /// <summary>
+        /// lblWeekendNightAmount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblWeekendNightAmount;
+        
+        /// <summary>
+        /// lblSubtotal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSubtotal;
+        
+        /// <summary>
+        /// lblDiscountNameAndAmount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDiscountNameAndAmount;
+        
+        /// <summary>
+        /// lblTax control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTax;
+        
+        /// <summary>
+        /// lblTotal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblTotal;
         
         /// <summary>
         /// btnSubmit control.

@@ -113,7 +113,7 @@ namespace The_Ruff_Inn
                 }
             }
 
-            Charges();
+            //Charges();
             calCheckOut.Enabled = true;
         }
 
@@ -195,7 +195,7 @@ namespace The_Ruff_Inn
 
                 if (discountNumber != -1)
                 {
-                    discountName = " (" + dt.Rows[discountNumber]["DiscountName"] + ")";
+                    discountName = " ( " + dt.Rows[discountNumber]["DiscountName"] + ")";
                     discountRate = (decimal)dt.Rows[discountNumber]["Rate"];
                 }
 
@@ -224,14 +224,15 @@ namespace The_Ruff_Inn
             }
             decimal tax = (subtotal - discountTotal) * (decimal)0.07;
 
-            lbxCharges.Items.Clear();
-            lbxCharges.Items.Add(string.Format("Room: {0}", dt.Rows[roomNumber]["Room"]));
-            lbxCharges.Items.Add(string.Format("{0} nights: {1:C2}", days, rt));
-            lbxCharges.Items.Add(string.Format("{0} weekend nights: {1:C2}", weekendNights, wt));
-            lbxCharges.Items.Add(string.Format("Subtotal: {0:C2}", subtotal));
-            lbxCharges.Items.Add(string.Format("Discount{0}: -{1:C2}", discountName, discountTotal));
-            lbxCharges.Items.Add(string.Format("Tax: {0:C2}", tax));
-            lbxCharges.Items.Add(string.Format("Total: {0:C2}", (subtotal - discountTotal + tax)));
+            lblRoomName.Text = string.Format("{0}", dt.Rows[roomNumber]["Room"]);
+            lblNumberNights.Text = string.Format("{0}", days);
+            lblRoomAmount.Text = string.Format("{0:C2}", rt);
+            lblNumberWeekendNights.Text = string.Format("{0}", weekendNights);
+            lblWeekendNightAmount.Text = string.Format("{0:C2}", wt);
+            lblSubtotal.Text = string.Format("{0:C2}", subtotal);
+            lblDiscountNameAndAmount.Text = string.Format("{0} -{1:C2}", discountName, discountTotal);
+            lblTax.Text = string.Format("{0:C2}", tax);
+            lblTotal.Text = string.Format("{0:C2}", (subtotal - discountTotal + tax));
         }
 
         protected void btnSubmit_Click(object sender, EventArgs e)
