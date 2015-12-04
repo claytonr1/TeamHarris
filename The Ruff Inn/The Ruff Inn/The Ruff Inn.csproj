@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Checkout.aspx" />
+    <Content Include="TeamCredits.aspx" />
     <Content Include="GuestInfo.aspx" />
     <Content Include="RoomBooking.aspx" />
     <Content Include="Web.config" />
@@ -70,6 +71,13 @@
     </Compile>
     <Compile Include="Checkout.aspx.designer.cs">
       <DependentUpon>Checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeamCredits.aspx.cs">
+      <DependentUpon>TeamCredits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeamCredits.aspx.designer.cs">
+      <DependentUpon>TeamCredits.aspx</DependentUpon>
     </Compile>
     <Compile Include="GuestInfo.aspx.cs">
       <DependentUpon>GuestInfo.aspx</DependentUpon>
